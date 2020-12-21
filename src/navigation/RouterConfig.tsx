@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Redirect, Route } from "react-router-dom";
 
 import { Authorization } from "../pages/Authorization";
-import { Home } from "../pages/Home/Home";
+import { Home } from "../pages/Home";
 import { TodoList } from "../pages/TodoList";
 
 import { PrivateRoute } from "./PrivateRoute";

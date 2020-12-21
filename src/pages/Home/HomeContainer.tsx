@@ -1,7 +1,16 @@
 import React from "react";
 
-import { Home } from "./Home";
+import "./style.scss";
 
-export const HomeContainer = () => {
-  return <Home />;
+import { Home } from "./Home";
+import { RouteComponentProps } from "react-router-dom";
+
+export const HomeContainer = (props: RouteComponentProps) => {
+  const { history } = props;
+
+  const goToTodo = () => {
+    history.push("/todolist");
+  };
+
+  return <Home goToTodo={goToTodo} />;
 };
